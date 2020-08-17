@@ -70,14 +70,13 @@ class RoundedEconomy extends BaseEconomy
 
 	public function subtract(string $uuid, int $amount)
 	{
-		$balance = $this->getBalance($uuid);
-		$balance->subtractAmount($amount);
+		$ev = new SubtractMoneyEvent($uuid, $amount);
+		$ev->call();
 	}
 
 	public function get(string $uuid)
 	{
-		$balance = $this->getBalance($uuid);
-		return $balance->getAmount();
+		return $this->getBalance($uuid)->getAmount();
 	}
 
 	public function set(string $uuid, int $amount)
@@ -103,7 +102,7 @@ class RoundedEconomy extends BaseEconomy
 		}
 		try {
 			$b = $this->getBalance($uuid);
-			$b->addAmount($amount);
+			$b->addAmount((int)$ev->getChange());
 		} catch (\InvalidArgumentException $exception){
 			//TODO: implement error tracing!
 		}
