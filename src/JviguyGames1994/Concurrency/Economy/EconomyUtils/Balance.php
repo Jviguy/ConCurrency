@@ -8,9 +8,6 @@ use JviguyGames1994\Concurrency\Economy\BaseEconomy;
 class Balance
 {
 	//properties
-	private $owner;
-	/** @var string $player the players name that owns this balance */
-	private $player;
 	/** @var int $amount the amount of the currency the player has */
 	private $amount;
 	//constructor
