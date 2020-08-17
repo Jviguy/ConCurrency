@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="" />
+    <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/Events/MoneyChangeEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/Events/MoneyChangeEvent.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +11,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -34,7 +39,10 @@
       <recent name="C:\Users\jvigu\Desktop\PocketMine-MP\plugins\Concurrency\src\JviguyGames1994\Concurrency\Economy\BaseEconomies" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="" />
@@ -44,11 +52,12 @@
       <updated>1597640527148</updated>
       <workItem from="1597640528288" duration="17922000" />
       <workItem from="1597661375523" duration="9464000" />
+      <workItem from="1597700287472" duration="101000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1597658542559">
