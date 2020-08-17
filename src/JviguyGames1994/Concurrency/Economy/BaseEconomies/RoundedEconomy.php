@@ -45,11 +45,9 @@ class RoundedEconomy extends BaseEconomy
 		$this->balances[$uuid] = new Balance($this->startingamount);
 	}
 
-	public function register()
+	public function register(string $uuid)
 	{
-		foreach (Server::getInstance()->getOnlinePlayers() as $player) {
-			$this->addBalance($player->getName());
-		}
+		$this->addBalance($uuid);
 	}
 
 	protected function getBalance(string $uuid): Balance
@@ -115,5 +113,12 @@ class RoundedEconomy extends BaseEconomy
 			return false;
 		}
 		return true;
+	}
+
+	public function init()
+	{
+		foreach (Server::getInstance()->getOnlinePlayers() as $player) {
+			$this->addBalance($player->getName());
+		}
 	}
 }

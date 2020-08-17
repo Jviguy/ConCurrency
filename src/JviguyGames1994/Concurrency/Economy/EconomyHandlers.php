@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace JviguyGames1994\Concurrency\Economy;
 
+use http\Exception\InvalidArgumentException;
 use JviguyGames1994\Concurrency\Concurrency;
 use JviguyGames1994\Concurrency\Economy\BaseEconomies\BaseEconomy;
 
@@ -23,6 +24,13 @@ class EconomyHandlers
 		$this->economys[$name] = $economy;
 	}
 	public function getEconomy(string $name): ?BaseEconomy{
-		return $this->economys[$name] ?? null;
+		try{
+			return $this->economys[$name];
+		} catch (\ErrorException $exception){
+			throw new InvalidArgumentException("economy $name doesnt Exist!");
+		}
+	}
+	public function getEconomies(): array{
+		return$this->economys;
 	}
 }

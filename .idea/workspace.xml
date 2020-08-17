@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/Listeners/RegisterHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/BaseEconomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/BaseEconomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/RoundedEconomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/RoundedEconomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/EconomyHandlers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/EconomyHandlers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +48,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +66,7 @@
       <workItem from="1597640528288" duration="17922000" />
       <workItem from="1597661375523" duration="9464000" />
       <workItem from="1597700287472" duration="101000" />
-      <workItem from="1597705076812" duration="34000" />
+      <workItem from="1597705076812" duration="2379000" />
     </task>
     <servers />
   </component>
@@ -81,6 +86,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1597707313387">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597707313387" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1597707248303">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1597707248303" />
+    <state x="237" y="48" key="NewPhpClassDialog" timestamp="1597705612015">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="237" y="48" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1597705612015" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1597705109972">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

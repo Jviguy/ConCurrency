@@ -16,7 +16,7 @@ abstract class BaseEconomy
 	/**
 	 * @return string The name of the economy
 	 */
-	abstract public function register();
+	abstract public function init();
 	abstract protected function getBalance(string $uuid);
 	abstract public function add(string $uuid, int $amount);
 	abstract public function subtract(string $uuid, int $amount);
@@ -26,4 +26,5 @@ abstract class BaseEconomy
 	abstract protected function removeBalance(string $uuid);
 	abstract protected function addBalance(string $uuid);
 	abstract public function isRegistered(string $uuid);
+	abstract public function register(string $uuid);
 }
