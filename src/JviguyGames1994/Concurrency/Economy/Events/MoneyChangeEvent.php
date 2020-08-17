@@ -31,4 +31,7 @@ class MoneyChangeEvent extends Event implements Cancellable
 	public function getChange(): float{
 		return $this->change;
 	}
+	public function setChange(float $change){
+		$this->change = $change;
+	}
 }
