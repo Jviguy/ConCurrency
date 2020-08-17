@@ -20,7 +20,7 @@ class ShopExample
 		} catch (InvalidArgumentException $exception){
 			//error thrown because emma isnt in the economy data base
 		}
-		$Kills->sum($player-getUUID(), -1000);// subtracts 1000 from emmas kills because the sum function follows interger rules
+		$Kills->sum($player->getUUID(), -1000);// subtracts 1000 from emmas kills because the sum function follows interger rules
 	}
 	public function onAdd(MoneyChangeEvent $event){
 		if ($event instanceof AddMoneyEvent){
