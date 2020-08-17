@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/../.." />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1gDDyr9luTtjNarL0XywKOr1ycS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jvigu\Desktop\PocketMine-MP\plugins\Concurrency\src\JviguyGames1994\Concurrency\Economy" />
+      <recent name="C:\Users\jvigu\Desktop\PocketMine-MP\plugins\Concurrency\src\JviguyGames1994\Concurrency\Economy\BaseEconomies" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="" />
+      <created>1597640527148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597640527148</updated>
+      <workItem from="1597640528288" duration="17922000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1597658542559">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597658542559" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1597640564662">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597640564662" />
+    <state x="267" y="48" key="NewPhpClassDialog" timestamp="1597641338714">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="48" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1597641338714" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1597640570733">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597640570733" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1597658954438">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1597658954438" />
+  </component>
+</project>
