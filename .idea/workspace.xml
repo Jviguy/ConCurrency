@@ -24,6 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
@@ -42,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597640527148</updated>
       <workItem from="1597640528288" duration="17922000" />
+      <workItem from="1597661375523" duration="3362000" />
     </task>
     <servers />
   </component>
@@ -57,10 +59,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1597640564662" />
-    <state x="267" y="48" key="NewPhpClassDialog" timestamp="1597641338714">
+    <state x="267" y="48" key="NewPhpClassDialog" timestamp="1597691754328">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="267" y="48" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1597641338714" />
+    <state x="267" y="48" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1597691754328" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1597640570733">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

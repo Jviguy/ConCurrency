@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace JviguyGames1994\Concurrency\Economy\EconomyUtils\BaseEconomies;
 
+use http\Exception\InvalidArgumentException;
 use JviguyGames1994\Concurrency\Economy\BaseEconomy;
 
 class Balance
