@@ -5,7 +5,9 @@ namespace JviguyGames1994\Concurrency\Economy\BaseEconomies;
 
 use http\Exception\InvalidArgumentException;
 use JviguyGames1994\Concurrency\Economy\EconomyUtils\BaseEconomies\Balance;
+use JviguyGames1994\Concurrency\Economy\Events\AddMoneyEvent;
 use JviguyGames1994\Concurrency\Economy\Events\MoneyChangeEvent;
+use JviguyGames1994\Concurrency\Economy\Events\SubtractMoneyEvent;
 use pocketmine\Server;
 
 class RoundedEconomy extends BaseEconomy
@@ -90,7 +92,11 @@ class RoundedEconomy extends BaseEconomy
 
 	public function sum(string $uuid, int $amount)
 	{
-		$ev = new MoneyChangeEvent($uuid, $amount);
+		if ($amount < 0){
+			$ev = new SubtractMoneyEvent($uuid, $amount);
+		} else {
+			$ev = new AddMoneyEvent($uuid, $amount);
+		}
 		$ev->call();
 		if ($ev->isCancelled()){
 			return;
@@ -103,5 +109,13 @@ class RoundedEconomy extends BaseEconomy
 		}
 	}
 
-	public function isRegistered(string $uuid): bool{try {$this->getBalances()[$uuid];} catch (\ErrorException $exception){return false;}return true;}
+	public function isRegistered(string $uuid): bool{
+		try {
+			$this->getBalances()[$uuid];
+		} catch
+		(\ErrorException $exception) {
+			return false;
+		}
+		return true;
+	}
 }
