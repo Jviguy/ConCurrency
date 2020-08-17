@@ -5,6 +5,8 @@ namespace JviguyGames1994\Concurrency\Economy;
 use http\Exception\InvalidArgumentException;
 use JviguyGames1994\Concurrency\Concurrency;
 use JviguyGames1994\Concurrency\Economy\BaseEconomies\BaseEconomy;
+use JviguyGames1994\Concurrency\Economy\Listeners\RegisterHandler;
+use pocketmine\Server;
 
 class EconomyHandlers
 {
@@ -16,6 +18,7 @@ class EconomyHandlers
 	private static $instance;
 	public function __construct(Concurrency $main)
 	{
+		Server::getInstance()->getPluginManager()->registerEvents(new RegisterHandler($this), $main);
 	}
 	public static function getInstance(): ?EconomyHandlers {
 		return self::$instance;
