@@ -6,7 +6,6 @@ namespace JviguyGames1994\Concurrency\Economy\BaseEconomies;
 use http\Exception\InvalidArgumentException;
 use JviguyGames1994\Concurrency\Economy\EconomyUtils\BaseEconomies\Balance;
 use JviguyGames1994\Concurrency\Economy\Events\AddMoneyEvent;
-use JviguyGames1994\Concurrency\Economy\Events\MoneyChangeEvent;
 use JviguyGames1994\Concurrency\Economy\Events\SubtractMoneyEvent;
 use pocketmine\Server;
 

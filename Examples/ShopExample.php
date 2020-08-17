@@ -27,7 +27,7 @@ class ShopExample
 			//called when a player is added money
 		}else if ($event instanceof \JviguyGames1994\Concurrency\Economy\Events\SubtractMoneyEvent){
 			$changeinmoney = $event->getChange();
-			if ($changeinmoney < -1000){
+			if ($changeinmoney < 1000){
 				$event->setCancelled();//stops the money from changing
 			}
 		}
