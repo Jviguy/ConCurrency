@@ -80,8 +80,12 @@ class RoundedEconomy extends BaseEconomy
 
 	public function set(string $uuid, int $amount)
 	{
-		$balance = $this->getBalance($uuid);
-		$balance->setAmount($amount);
+		try{
+			$b = $this->getBalance($uuid);
+			$b->setAmount($amount);
+		} catch (\InvalidArgumentException $exception){
+			//TODO: error tracing
+		}
 	}
 
 	public function sum(string $uuid, int $amount)
