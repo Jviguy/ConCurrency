@@ -2,7 +2,6 @@
 declare(strict_types=1);
 
 use JviguyGames1994\Concurrency\Concurrency;
-use JviguyGames1994\Concurrency\Economy\EconomyHandlers;
 use JviguyGames1994\Concurrency\Economy\Events\AddMoneyEvent;
 use JviguyGames1994\Concurrency\Economy\Events\MoneyChangeEvent;
 
