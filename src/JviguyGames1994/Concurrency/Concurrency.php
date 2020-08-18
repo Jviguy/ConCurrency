@@ -10,12 +10,15 @@ use JviguyGames1994\Concurrency\Economy\EconomyHandlers;
 use pocketmine\plugin\PluginBase;
 
 class Concurrency extends PluginBase{
-	private static $instance;
+	
+	private static $handlers;
+	
 	public function onEnable()
 	{
-		self::$instance = new EconomyHandlers($this);
+		self::$handlers = new EconomyHandlers($this);
 	}
-	public static function getInstance(){
+	
+	public static function getHandlers() : EconomyHandlers{
 		return self::$instance;
 	}
 }
