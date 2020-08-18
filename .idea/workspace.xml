@@ -19,16 +19,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/RoundedEconomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/RoundedEconomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/EconomyHandlers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/EconomyHandlers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +69,23 @@
       <workItem from="1597640528288" duration="17922000" />
       <workItem from="1597661375523" duration="9464000" />
       <workItem from="1597700287472" duration="101000" />
-      <workItem from="1597705076812" duration="6500000" />
+      <workItem from="1597705076812" duration="6952000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed up RoundedEconomy.php">
+      <created>1597714215237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597714215238</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed up RoundedEconomy.php">
+      <created>1597714448238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597714448238</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,7 +102,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -100,6 +114,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed up RoundedEconomy.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed up RoundedEconomy.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1597707313387">

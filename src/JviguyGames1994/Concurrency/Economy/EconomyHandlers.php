@@ -26,7 +26,7 @@ class EconomyHandlers
 	public function registerNewEconomy(BaseEconomy $economy, string $name){
 		$this->economys[$name] = $economy;
 	}
-	public function getEconomy(string $name): ?BaseEconomy{
+	public function getEconomy(string $name): BaseEconomy{
 		try{
 			return $this->economys[$name];
 		} catch (\ErrorException $exception){
