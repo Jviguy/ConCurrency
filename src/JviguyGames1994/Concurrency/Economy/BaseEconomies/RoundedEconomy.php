@@ -14,15 +14,15 @@ class RoundedEconomy extends BaseEconomy
 
 	//properties
 	/** @var array $balances the balances of all registered players */
-	private $balances;
+	protected $balances;
 	/**
 	 * @var int $startingamount
 	 */
-	private $startingamount;
+	protected $startingamount;
 	/**
 	 * @var int $moneycap
 	 */
-	private $moneycap;
+	protected $moneycap;
 	//constructor
 	public function __construct(int $startingamount=0, int $moneycap=PHP_INT_MAX){
 		$this->startingamount = $startingamount;
