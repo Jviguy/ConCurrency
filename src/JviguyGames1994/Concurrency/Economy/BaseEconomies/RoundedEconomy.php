@@ -78,11 +78,16 @@ class RoundedEconomy extends BaseEconomy
 
 	public function set(string $uuid, int $amount)
 	{
-		try{
-			$b = $this->getBalance($uuid);
-			$b->setAmount($amount);
-		} catch (\InvalidArgumentException $exception){
-			//TODO: error tracing
+		$b = $this->getBalance($uuid);
+		if ($amount ===$b->getAmount()){return;}
+		if ($amount < $b->getAmount()){
+			$ev = new SubtractMoneyEvent($uuid, $amount);
+		} else{
+			$ev = new AddMoneyEvent($uuid, $amount);
+		}
+		$ev->call();
+		if (!$ev->isCancelled()){
+			$b->setAmount((int)$ev->getChange());
 		}
 	}
 
@@ -97,19 +102,14 @@ class RoundedEconomy extends BaseEconomy
 		if ($ev->isCancelled()){
 			return;
 		}
-		try {
 			$b = $this->getBalance($uuid);
 			$b->addAmount((int)$ev->getChange());
-		} catch (\InvalidArgumentException $exception){
-			//TODO: implement error tracing!
-		}
 	}
 
 	public function isRegistered(string $uuid): bool{
 		try {
 			$this->getBalances()[$uuid];
-		} catch
-		(\ErrorException $exception) {
+		} catch (\ErrorException $exception) {
 			return false;
 		}
 		return true;
