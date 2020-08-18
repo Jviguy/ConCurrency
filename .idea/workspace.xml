@@ -25,9 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="Fixed Minor Error in EconomyHandlers.php">
+    <list default="true" id="7582f015-0b54-4ab8-aae2-2d0338be2151" name="Default Changelist" comment="Added Set events for RoundedEconomy.php and got rid of some extra error handling that the api user should be doing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Concurrency.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Concurrency.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/BaseEconomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/BaseEconomy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/RoundedEconomy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/BaseEconomies/RoundedEconomy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/EconomyHandlers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JviguyGames1994/Concurrency/Economy/EconomyHandlers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Jviguy/ConCurrency" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -70,7 +80,7 @@
       <workItem from="1597661375523" duration="9464000" />
       <workItem from="1597700287472" duration="101000" />
       <workItem from="1597705076812" duration="10181000" />
-      <workItem from="1597723358492" duration="2053000" />
+      <workItem from="1597723358492" duration="5413000" />
     </task>
     <task id="LOCAL-00001" summary="fixed up RoundedEconomy.php">
       <created>1597714215237</created>
@@ -93,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597714663510</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Set events for RoundedEconomy.php and got rid of some extra error handling that the api user should be doing">
+      <created>1597725826365</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597725826365</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,17 +143,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed up RoundedEconomy.php" />
     <MESSAGE value="Fixed Minor Error in EconomyHandlers.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Minor Error in EconomyHandlers.php" />
+    <MESSAGE value="Added Set events for RoundedEconomy.php and got rid of some extra error handling that the api user should be doing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Set events for RoundedEconomy.php and got rid of some extra error handling that the api user should be doing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="131" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597723703051">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="409" y="131" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1597723703051" />
-    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1597707313387">
+    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1597727456717">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597707313387" />
+    <state x="445" y="9" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597727456717" />
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1597707248303">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -149,10 +167,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1597723552031" />
-    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1597714673226">
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1597725844444">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597714673226" />
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597725844444" />
     <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597714642398">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

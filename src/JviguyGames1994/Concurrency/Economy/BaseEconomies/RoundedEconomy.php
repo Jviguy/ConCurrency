@@ -61,6 +61,11 @@ class RoundedEconomy extends BaseEconomy
 
 	public function add(string $uuid, int $amount)
 	{
+		$ev = new AddMoneyEvent($uuid, $amount);
+		$ev->call();
+		if ($ev->isCancelled()){
+			return;
+		}
 		$balance = $this->getBalance($uuid);
 		$balance->addAmount($amount);
 	}
@@ -69,6 +74,11 @@ class RoundedEconomy extends BaseEconomy
 	{
 		$ev = new SubtractMoneyEvent($uuid, $amount);
 		$ev->call();
+		if ($ev->isCancelled()){
+			return;
+		}
+		$b = $this->getBalance($uuid);
+		$b->subtractAmount($amount);
 	}
 
 	public function get(string $uuid)
@@ -115,10 +125,16 @@ class RoundedEconomy extends BaseEconomy
 		return true;
 	}
 
-	public function init()
+	protected function init()
 	{
 		foreach (Server::getInstance()->getOnlinePlayers() as $player) {
 			$this->addBalance($player->getName());
 		}
+	}
+
+	protected function reset(string $uuid)
+	{
+		$b = $this->getBalance($uuid);
+		$b->setAmount($this->startingamount);
 	}
 }
