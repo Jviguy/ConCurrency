@@ -7,7 +7,7 @@ use JviguyGames1994\Concurrency\Economy\BaseEconomies\BaseEconomy;
 use JviguyGames1994\Concurrency\Economy\Listeners\RegisterHandler;
 use pocketmine\Server;
 
-class EconomyHandlers
+final class EconomyHandlers
 {
 	/** @var BaseEconomy[] $economys */
 	private $economys;
