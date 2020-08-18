@@ -12,11 +12,13 @@ class RegisterHandler implements Listener
 	private $Ecos;
 	public function __construct(EconomyHandlers $economyHandlers)
 	{
-		$this->Ecos = $economyHandlers->getEconomies();
+		$this->Ecos = $economyHandlers;
 	}
 
 	public function handle(PlayerJoinEvent $event){
-		foreach ($this->Ecos as $eco){
+		$ecos = $this->Ecos->getEconomies();
+		if (!isset($ecos)){return;}
+		foreach ($ecos as $eco){
 			if ($eco instanceof BaseEconomy){
 				if ($eco->isRegistered($event->getPlayer()->getUniqueId()->toString())){
 					return;
