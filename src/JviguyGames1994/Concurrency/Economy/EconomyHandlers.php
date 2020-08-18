@@ -10,30 +10,29 @@ use pocketmine\Server;
 
 class EconomyHandlers
 {
-	/** @var array $economys */
+	/** @var BaseEconomy[] $economys */
 	private $economys;
 	/** @var string $provider */
 	private $provider;
-	/** @var EconomyHandlers $instance */
-	private static $instance;
+
 	public function __construct(Concurrency $main)
 	{
 		Server::getInstance()->getPluginManager()->registerEvents(new RegisterHandler($this), $main);
 	}
-	public static function getInstance(): ?EconomyHandlers {
-		return self::$instance;
-	}
+	
 	public function registerNewEconomy(BaseEconomy $economy, string $name){
 		$this->economys[$name] = $economy;
 	}
+	
 	public function getEconomy(string $name): BaseEconomy{
 		try{
 			return $this->economys[$name];
 		} catch (\ErrorException $exception){
 			throw new InvalidArgumentException("economy $name doesnt Exist!");
-		}
+		} //in php8 you will be able to throw exceptions with the null coalescing operator
 	}
-	public function getEconomies(): array{
-		return$this->economys;
+	
+	public function getEconomies(){
+		return $this->economys;
 	}
 }
