@@ -15,6 +15,9 @@ class MoneyChangeEvent extends Event implements Cancellable
 	private $change;
 	public function __construct(string $uuid, int $change)
 	{
+		if($change == 0){
+			$this->setCancelled();
+		}
 		$this->uuid = $uuid;
 		$this->change = $change;
 	}
