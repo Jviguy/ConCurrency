@@ -21,6 +21,7 @@ abstract class BaseEconomy
 	abstract public function add(string $uuid, int $amount);
 	abstract public function subtract(string $uuid, int $amount);
 	abstract public function get(string $uuid);
+	abstract public function reset(string $uuid);
 	abstract public function set(string $uuid, int $amount);
 	abstract public function sum(string $uuid, int $amount);
 	abstract protected function removeBalance(string $uuid);
