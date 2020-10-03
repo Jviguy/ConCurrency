@@ -18,6 +18,7 @@ class EconomyHandlers
 	public function __construct(Concurrency $main)
 	{
 		Server::getInstance()->getPluginManager()->registerEvents(new RegisterHandler($this), $main);
+		self::$instance = $this;
 	}
 	public static function getInstance(): ?EconomyHandlers {
 		return self::$instance;

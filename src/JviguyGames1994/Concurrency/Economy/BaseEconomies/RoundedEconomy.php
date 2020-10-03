@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace JviguyGames1994\Concurrency\Economy\BaseEconomies;
 
-use http\Exception\InvalidArgumentException;
+use Exception;
 use JviguyGames1994\Concurrency\Economy\EconomyUtils\BaseEconomies\Balance;
 use JviguyGames1994\Concurrency\Economy\Events\AddMoneyEvent;
 use JviguyGames1994\Concurrency\Economy\Events\SubtractMoneyEvent;
@@ -27,6 +27,7 @@ class RoundedEconomy extends BaseEconomy
 	public function __construct(int $startingamount=0, int $moneycap=PHP_INT_MAX){
 		$this->startingamount = $startingamount;
 		$this->moneycap = $moneycap;
+		$this->init();
 	}
 	//Functions
 	public function getType()
@@ -34,7 +35,7 @@ class RoundedEconomy extends BaseEconomy
 		return self::class;
 	}
 
-	protected function getBalances(): array
+	protected function getBalances(): ?array
 	{
 		return $this->balances;
 	}
@@ -55,7 +56,7 @@ class RoundedEconomy extends BaseEconomy
 		if (isset($this->getBalances()[$uuid])){
 			return $this->getBalances()[$uuid];
 		} else {
-			throw new InvalidArgumentException("UUID {$uuid} Is not registered!");
+			throw new \InvalidArgumentException("UUID {$uuid} Is not registered!");
 		}
 	}
 
@@ -119,7 +120,7 @@ class RoundedEconomy extends BaseEconomy
 	public function isRegistered(string $uuid): bool{
 		try {
 			$this->getBalances()[$uuid];
-		} catch (\ErrorException $exception) {
+		} catch (Exception $exception) {
 			return false;
 		}
 		return true;
